@@ -1,0 +1,175 @@
+.slider {
+  background: #001529;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 12px;
+  flex: 0 0 240px;
+}
+
+.slider-min {
+  max-width: 68px !important;
+  min-width: 68px !important;
+  width: 68px !important;
+}
+
+.slider-max {
+  max-width: 240px !important;
+  min-width: 240px !important;
+  width: 240px !important;
+}
+
+.logo-vertical {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, .2);
+  border-radius: 6px;
+}
+
+.page-title {
+  text-transform: capitalize;
+  margin: 16px;
+}
+
+.ant-card {
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 6px;
+}
+
+.ant-col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ant-card-body {
+  padding: 20px 24px;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.mt-10 {
+  margin-top: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.flex-col {
+  flex-direction: column;
+}
+
+.flex.gap-2 {
+  gap: .5rem;
+}
+
+.flex.gap-3 {
+  gap: 1rem;
+}
+
+.flex.gap-4 {
+  gap: 1.5rem;
+}
+
+.flex.justify-center {
+  justify-content: center;
+}
+
+.flex.justify-between {
+  justify-content: space-between;
+}
+
+.flex.items-center {
+  align-items: center;
+}
+
+.text-danger {
+  color: rgb(255, 77, 79);
+}
+
+.text-warning {
+  color: rgb(250, 173, 20);
+}
+
+.text-primary {
+  color: rgb(0, 168, 223);
+}
+
+.text-info {
+  color: rgb(114, 46, 209);
+}
+
+.text-success {
+  color: rgb(82, 196, 26);
+}
+
+.text-sky-blue {
+  color: rgb(19, 194, 194);
+}
+
+.text-muted {
+  color: rgb(19, 194, 194);
+}
+
+.bg-danger {
+  background-color: rgb(255, 77, 79);
+}
+
+.bg-warning {
+  background-color: rgb(250, 173, 20);
+}
+
+.bg-primary {
+  background-color: rgb(0, 168, 223);
+}
+
+.bg-info {
+  background-color: rgb(114, 46, 209);
+}
+
+.bg-sky-blue {
+  background-color: rgb(19, 194, 194);
+}
+
+.bg-danger-light {
+  background-color: rgb(255, 241, 240);
+}
+
+.bg-warning-light {
+  background-color: rgb(255, 247, 230);
+}
+
+.bg-primary-light {
+  background-color: rgb(246, 255, 237);
+}
+
+.bg-info-light {
+  background-color: rgb(249, 240, 255);
+}
+
+.bg-success-light {
+  background-color: rgb(246, 255, 237);
+}
+
+.bg-sky-blue-light {
+  background-color: rgb(230, 255, 251);
+}
+
+.fs-28 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
