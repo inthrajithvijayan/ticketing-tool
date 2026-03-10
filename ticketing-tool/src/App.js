@@ -64,7 +64,7 @@ const App = () => {
             ]}
           />
         </Sider>
-        <Layout style={{ marginLeft: collapsed ? '68px' : '240px', transition: 'marginLeft 0.2s' }}>
+        <Layout style={{ marginLeft: collapsed ? '68px' : '240px', transition: 'marginLeft 0.2s', marginBottom:'30px' }}>
           <Header style={{ padding: 0, background: colorBgContainer }}>
             <Button
               type="text"

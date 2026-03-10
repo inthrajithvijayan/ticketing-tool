@@ -32,7 +32,10 @@
 
 .page-title {
   text-transform: capitalize;
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 26px;
+  margin-right: 26px;
 }
 
 .ant-card {

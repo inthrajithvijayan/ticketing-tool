@@ -124,10 +124,90 @@ const Dashboard = () => {
         </Col>
         <Col span={8}>
           <Card className="" title="By Priority" variant="borderless">
+            <Flex gap="large" vertical>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div>
+            </Flex>
           </Card>
         </Col>
         <Col span={8}>
           <Card className="" title="By Agent" variant="borderless">
+            <Flex gap="large" vertical>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div> <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>In Progress</span>
+                  <span>4</span>
+                </div>
+                <span><Progress percent={30} showInfo={false} /></span>
+              </div>
+            </Flex>
           </Card>
         </Col>
       </Row>
