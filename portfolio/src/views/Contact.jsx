@@ -1,4 +1,4 @@
-import { PhoneIcon, AtSymbolIcon, FlagIcon } from '@heroicons/react/24/solid';
+import { PhoneIcon, AtSymbolIcon, FlagIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Button } from "@/components/ui/button";
 import { Field, FieldGroup } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
@@ -6,14 +6,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { Toaster } from "@/components/ui/sonner"
 import { toast } from "sonner"
 import { useState } from 'react'
+import { useScrollIndicator } from '@/hooks/useScrollIndicator';
 
 function Contact() {
-
     const [formData, setFormData] = useState({
         name: "",
         email: '',
         message: "",
     });
+
+    const { showScrollIndicator } = useScrollIndicator();
 
     const handleForm = (event) => {
         let name = event.target?.name;
@@ -50,13 +52,18 @@ function Contact() {
         <>
             <div className="wrapper">
                 <section className="contact">
-                    <div className="min-h-screen flex items-center justify-center">
+                    <div className="min-h-screen flex items-center justify-center relative">
                         <div className="flex flex-col items-center justify-center">
                             <h1 className="md:text-[68px] font-bold sm:text-2xl">Contact</h1>
                             <p className="mt-5 fs-13">Home / <span className="text-custom">Contact</span></p>
                         </div>
+                        {showScrollIndicator && (
+                            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                                <ChevronDownIcon className="w-8 h-8 text-custom" />
+                            </div>
+                        )}
                     </div>
-                    <div className="mt-10 fs-13 mx-3 md:mx-0">
+                    <div className="mt-10 fs-13 mx-3 md:mx-0" id="contact-info">
                         <span className="title-shadow">CONTACT INFO</span>
                         <div className="flex gap-5 mt-5 flex-col md:flex-row">
                             <div className="flex flex-col gap-4">
@@ -83,7 +90,7 @@ function Contact() {
                         </div>
                     </div>
                 </section>
-                <section className="contactform fs-13 mt-10 mx-3 md:mx-0">
+                <section className="contactform fs-13 mt-10 mx-3 md:mx-0" id="hire-form">
                     <span className="title-shadow">HIRE ME</span>
                     <form onSubmit={(e) => e.preventDefault()}>
                         <FieldGroup className="mt-5">

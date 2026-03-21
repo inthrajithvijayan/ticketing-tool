@@ -2,9 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { CheckIcon } from '@heroicons/react/24/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ChevronDownIcon } from '@heroicons/react/24/outline';
+import { useScrollIndicator } from '@/hooks/useScrollIndicator';
 import 'animate.css';
 
 function Resume() {
+    const { showScrollIndicator, scrollToSection } = useScrollIndicator();
+    
     const experienceData = [
         {
             year: "2022 - Present",
@@ -32,13 +36,18 @@ function Resume() {
     return (
         <div className="wrapper">
             <section className="about">
-                <div className="min-h-screen flex items-center justify-center">
+                <div className="min-h-screen flex items-center justify-center relative">
                     <div className="flex flex-col items-center justify-center">
                         <h1 className="md:text-[68px] font-bold sm:text-2xl font-bold">Resume</h1>
                         <p className="mt-5 fs-13">Home / <span className="text-custom">Resume</span></p>
                     </div>
+                    {showScrollIndicator && (
+                        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                            <ChevronDownIcon className="w-8 h-8 text-custom" />
+                        </div>
+                    )}
                 </div>
-                <div className="mt-10 fs-13 mx-3 md:mx-0">
+                <div className="mt-10 fs-13 mx-3 md:mx-0" id="about-section">
                     <span className="title-shadow">ABOUT ME</span>
                     <div className="flex flex-col md:flex-row gap-5 mt-5 justify-center items-center md:justify-center md:items-center">
                         <div className="flex justify-start items-start">
@@ -95,7 +104,7 @@ function Resume() {
                     </div>
                 </div>
             </section>
-            <section className="resume mt-[5rem] mx-3 md:mx-0">
+            <section className="resume mt-[5rem] mx-3 md:mx-0" id="resume-section">
                 <div className="timeline fs-13 flex flex-col md:flex-row">
                     <div className="section">
                         <span className="title-shadow">EXPERIENCE</span>
@@ -127,7 +136,7 @@ function Resume() {
                     </div>
                 </div>
             </section>
-            <section className="skill mt-[5rem] fs-13 mx-3 md:mx-0">
+            <section className="skill mt-[5rem] fs-13 mx-3 md:mx-0" id="skills-section">
                 <span className="title-shadow">SKILLS</span>
                 <div className="mt-5">
                     <div className="flex justify-between flex-col md:flex-row">
@@ -173,7 +182,7 @@ function Resume() {
                     </div>
                 </div>
             </section>
-            <section className="knowledge mt-[5rem] fs-13 mx-3 md:mx-0">
+            <section className="knowledge mt-[5rem] fs-13 mx-3 md:mx-0" id="knowledge-section">
                 <span className="title-shadow">KNOWLEDGE</span>
                 <div className="mt-5">
                     <div className="flex md:justify-between md:flex-row flex-col">

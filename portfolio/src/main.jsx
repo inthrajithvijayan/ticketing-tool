@@ -4,8 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import "./components/Fontawsomeicons";
 import { HashRouter } from 'react-router-dom';
+import { ThemeProvider } from './contexts/ThemeContext';
+
 createRoot(document.getElementById('root')).render(
-  <HashRouter >
-    <App />
-  </HashRouter >
+  <StrictMode>
+    <HashRouter>
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
+    </HashRouter>
+  </StrictMode>
 )

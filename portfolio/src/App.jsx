@@ -10,7 +10,7 @@ import Resume from '@/views/Resume'
 import Contact from '@/views/Contact'
 import AnimatedCursor from "react-animated-cursor"
 import Snowfall from 'react-snowfall'
-
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 function App() {
   const navigate = useNavigate();
@@ -19,22 +19,25 @@ function App() {
     <>
       <div className='container' style={{ margin: 0 }}>
         <header className=''>
-          <div className='header-top flex md:items-end md:justify-end items-center justify-center'>
+          <div className='header-top flex md:items-end md:justify-between items-center justify-between px-8'>
+            <div className="flex items-center gap-4">
+              <ThemeToggle />
+            </div>
             <div>
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuLink className="cursor-pointer" onClick={() => navigate('/home')}>
+                    <NavigationMenuLink className="cursor-pointer nav-link" onClick={() => navigate('/home')}>
                       Home
                     </NavigationMenuLink>
                   </NavigationMenuItem>
-                  <NavigationMenuItem >
-                    <NavigationMenuLink className="cursor-pointer" onClick={() => navigate('/resume')}>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink className="cursor-pointer nav-link" onClick={() => navigate('/resume')}>
                       Resume
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <NavigationMenuLink className="cursor-pointer" onClick={() => navigate('/contact')}>
+                    <NavigationMenuLink className="cursor-pointer nav-link" onClick={() => navigate('/contact')}>
                       Contact
                     </NavigationMenuLink>
                   </NavigationMenuItem>
@@ -47,8 +50,8 @@ function App() {
           <Routes>
             <Route exact path='/portfolio' element={
               <section className="min-h-screen flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <h1 className="sm:text-2xl md:text-5xl font-bold">Hi, I'm Inthrajith Vijayan</h1>
+                <div className="text-center space-y-4 animate-fade-in-up">
+                  <h1 className="sm:text-2xl md:text-5xl font-bold title-shadow">Hi, I'm Inthrajith Vijayan</h1>
                   <h1 className="text-lg font-mono text-custom">
                     <TypeAnimation
                       sequence={[
@@ -65,8 +68,8 @@ function App() {
             } />
             <Route exact path='/home' element={
               <section className="min-h-screen flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <h1 className="sm:text-2xl md:text-5xl font-bold">Hi, I'm Inthrajith Vijayan</h1>
+                <div className="text-center space-y-4 animate-fade-in-up">
+                  <h1 className="sm:text-2xl md:text-5xl font-bold title-shadow">Hi, I'm Inthrajith Vijayan</h1>
                   <h1 className="text-lg font-mono">
                     <TypeAnimation
                       sequence={[
