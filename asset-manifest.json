@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ticketing-tool/static/css/main.419fd045.css",
+    "main.js": "/ticketing-tool/static/js/main.d09b0465.js",
+    "index.html": "/ticketing-tool/index.html",
+    "main.419fd045.css.map": "/ticketing-tool/static/css/main.419fd045.css.map",
+    "main.d09b0465.js.map": "/ticketing-tool/static/js/main.d09b0465.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.419fd045.css",
+    "static/js/main.d09b0465.js"
+  ]
+}
