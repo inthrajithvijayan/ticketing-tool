@@ -83,41 +83,38 @@ const Dashboard = () => {
             <Flex gap="large" vertical>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Open</span>
+                  <span>80</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={80} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>Pending</span>
+                  <span>5</span>
+                </div>
+                <span><Progress percent={5} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
+                <div className='flex justify-between'>
+                  <span>Resolved</span>
+                  <span>5</span>
+                </div>
+                <span><Progress percent={5} showInfo={false} /></span>
               </div>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
                   <span>In Progress</span>
                   <span>4</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={4} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Closed</span>
+                  <span>6</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={6} showInfo={false} /></span>
               </div>
             </Flex>
           </Card>
@@ -127,41 +124,31 @@ const Dashboard = () => {
             <Flex gap="large" vertical>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Critical</span>
+                  <span>10</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={10} showInfo={false} strokeColor="#ff4d4f" /></span>
               </div>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>High</span>
+                  <span>15</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={15} showInfo={false} strokeColor="#ff7a45" /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Medium</span>
+                  <span>45</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={45} showInfo={false} strokeColor="#ffa940" /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Low</span>
+                  <span>30</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={30} showInfo={false} strokeColor="#52c41a" /></span>
               </div>
             </Flex>
           </Card>
@@ -171,41 +158,38 @@ const Dashboard = () => {
             <Flex gap="large" vertical>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>John Smith</span>
+                  <span>25</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={25} showInfo={false} /></span>
               </div>
               <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Sarah Johnson</span>
+                  <span>20</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={20} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Mike Wilson</span>
+                  <span>18</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={18} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Emily Davis</span>
+                  <span>22</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
+                <span><Progress percent={22} showInfo={false} /></span>
+              </div>
+              <div className='flex flex-col'>
                 <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
+                  <span>Alex Brown</span>
+                  <span>15</span>
                 </div>
-                <span><Progress percent={30} showInfo={false} /></span>
-              </div> <div className='flex flex-col'>
-                <div className='flex justify-between'>
-                  <span>In Progress</span>
-                  <span>4</span>
-                </div>
-                <span><Progress percent={30} showInfo={false} /></span>
+                <span><Progress percent={15} showInfo={false} /></span>
               </div>
             </Flex>
           </Card>

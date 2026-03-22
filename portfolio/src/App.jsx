@@ -51,7 +51,7 @@ function App() {
             <Route exact path='/portfolio' element={
               <section className="min-h-screen flex items-center justify-center">
                 <div className="text-center space-y-4 animate-fade-in-up">
-                  <h1 className="sm:text-2xl md:text-5xl font-bold title-shadow">Hi, I'm Inthrajith Vijayan</h1>
+                  <h1 className="sm:text-2xl md:text-5xl font-bold">Hi, I'm Inthrajith Vijayan</h1>
                   <h1 className="text-lg font-mono text-custom">
                     <TypeAnimation
                       sequence={[
@@ -69,7 +69,7 @@ function App() {
             <Route exact path='/home' element={
               <section className="min-h-screen flex items-center justify-center">
                 <div className="text-center space-y-4 animate-fade-in-up">
-                  <h1 className="sm:text-2xl md:text-5xl font-bold title-shadow">Hi, I'm Inthrajith Vijayan</h1>
+                  <h1 className="sm:text-2xl md:text-5xl font-bold">Hi, I'm Inthrajith Vijayan</h1>
                   <h1 className="text-lg font-mono">
                     <TypeAnimation
                       sequence={[
